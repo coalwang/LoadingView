@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/hide_btn"
+            android:text="隐藏view"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/show_btn"
+            android:text="显示view"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/loading_btn"
+            android:text="正在加载"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/no_data_btn"
+            android:text="没有数据"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/net_error_btn"
+            android:text="网络错误"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+    <com.cola.loadingview.LoadingView
+        android:visibility="gone"
+        android:id="@+id/loading_view_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.cola.loadingview.LoadingView>
+
+</LinearLayout>
